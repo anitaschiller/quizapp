@@ -36,8 +36,5 @@ nav ul {
 
 .footer-nav li {
     list-style: none;
-}
-
-ul li i {
-    width: 50%;
+    border: 1px solid black;
 }
