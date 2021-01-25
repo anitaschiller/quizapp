@@ -1,0 +1,22 @@
+{
+  "name": "quizapp",
+  "version": "1.0.0",
+  "description": "This is my awesome quiz app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anitaschiller/quizapp.git"
+  },
+  "author": "Anita Schiller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anitaschiller/quizapp/issues"
+  },
+  "homepage": "https://github.com/anitaschiller/quizapp#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
