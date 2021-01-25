@@ -9,7 +9,35 @@ body {
     line-height: 1.5;
 }
 
-.main {
-    display: grid; 
+main {
+    display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+header {
+    background-color: deepskyblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-items: space-around;
+    border: 1px solid black;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.footer-nav li {
+    list-style: none;
+}
+
+ul li i {
+    width: 50%;
 }
