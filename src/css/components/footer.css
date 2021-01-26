@@ -1,0 +1,21 @@
+.footer__nav__list {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    border: 1px solid black;
+}
+
+.footer__nav__list li {
+    list-style: none;
+    border: 1px solid black;
+}
+
+.fas {
+    color: deepskyblue;
+}
+
+nav ul {
+    display: flex;
+    justify-items: space-around;
+    border: 1px solid black;
+}
