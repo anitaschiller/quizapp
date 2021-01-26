@@ -40,9 +40,13 @@ nav ul {
 }
 
 .fas {
+<<<<<<< HEAD
     color: deepskyblue; 
 }
 
 footer {
     background-color: ivory;
+=======
+    color: deepskyblue;
+>>>>>>> footerlinks
 }
