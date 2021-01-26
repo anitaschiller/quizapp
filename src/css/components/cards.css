@@ -1,0 +1,14 @@
+.card {
+    background: #fff1e6;
+    padding: 0.5rem;
+}
+
+.card__headline {
+    color: var(--secondary);
+}
+
+.card__button {
+    font-size: 1.1rem;
+    padding: 0.2rem;
+    background-color: var(--fourth-c);
+}

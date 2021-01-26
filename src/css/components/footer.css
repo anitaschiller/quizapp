@@ -1,3 +1,7 @@
+.footer {
+    background: var(--primary);
+}
+
 .footer__nav__list {
     display: flex;
     justify-content: space-around;
@@ -11,7 +15,7 @@
 }
 
 .fas {
-    color: deepskyblue;
+    color: var(--fourth-c);
 }
 
 nav ul {

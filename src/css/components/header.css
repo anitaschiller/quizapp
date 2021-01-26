@@ -1,7 +1,9 @@
 header {
-    background-color: deepskyblue;
+    background-color: var(--primary);
 }
 
-h1 {
+.header__headline {
     text-align: center;
+    color: var(--fourth-c);
+    padding-top: 1rem;
 }
