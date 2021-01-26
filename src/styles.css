@@ -38,3 +38,11 @@ nav ul {
     list-style: none;
     border: 1px solid black;
 }
+
+.fas {
+    color: deepskyblue; 
+}
+
+footer {
+    background-color: ivory;
+}
