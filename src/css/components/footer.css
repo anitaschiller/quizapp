@@ -6,20 +6,15 @@
     display: flex;
     justify-content: space-around;
     padding: 0;
-    border: 1px solid black;
+    display: flex;
 }
 
 .footer__nav__list li {
     list-style: none;
-    border: 1px solid black;
 }
 
 .fas {
     color: var(--fourth-c);
 }
 
-nav ul {
-    display: flex;
-    justify-items: space-around;
-    border: 1px solid black;
-}
+
