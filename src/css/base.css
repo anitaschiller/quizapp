@@ -1,0 +1,23 @@
+:root {
+    --primary: #2a9d8f;
+    --secondary: #e76f51;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    font-size: 1.25rem;
+}
