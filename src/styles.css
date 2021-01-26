@@ -28,13 +28,13 @@ nav ul {
     border: 1px solid black;
 }
 
-.footer-nav {
+.footer__nav__list {
     display: flex;
     justify-content: space-around;
     padding: 0;
 }
 
-.footer-nav li {
+.footer__nav__list li {
     list-style: none;
     border: 1px solid black;
 }
