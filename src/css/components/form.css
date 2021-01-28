@@ -28,14 +28,6 @@ legend {
     font-size: 1.7rem;
 }
 
-.form__button {
-    font-size: 0.9rem;
-    padding: 0.4rem;
-    background-color: var(--fourth-c);
-    border: solid 2px var(--secondary);
-    margin: 1rem;
-}
-
 fieldset {
     border: 1px solid var(--secondary);
 }

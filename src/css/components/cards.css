@@ -21,20 +21,18 @@
     top: -10px;
 }
 
-.card__bookmark.fas {
+.card__bookmark.fas, .card__bookmark.far {
     color: var(--secondary);
+    background-color: var(--third-c);
+}
+
+.card__bookmark.fas:hover, .card__bookmark.far:hover {
+    transform: scale(1.1);
 }
 
 .card__question {
     font-size: 1.1rem;
     padding-bottom: 1rem;
-}
-
-.card__button {
-    font-size: 0.9rem;
-    padding: 0.4rem;
-    background-color: var(--fourth-c);
-    border: solid 2px var(--secondary);
 }
 
 .card__tags {

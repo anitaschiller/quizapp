@@ -18,6 +18,9 @@
 
 .fas {
     color: var(--fourth-c);
+    padding-bottom: 0.3rem;
 }
 
-
+.fas.active {
+    border-bottom: double var(--fourth-c) 10px;
+}

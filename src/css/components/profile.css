@@ -1,0 +1,36 @@
+.profile {
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    background: var(--third-c);
+}
+
+.profile__aboutme {
+    margin: 1rem;
+}
+
+.profile__skills {
+    margin: 2rem 0;
+    background: white;
+}
+
+.profile__skills__tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0; 
+    margin-top: 0;
+}
+
+.profile__skills__tags li {
+    background: var(--secondary);
+    list-style: none;
+    padding: 0.3rem;
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+img {
+    width: 50%;
+    border-radius: 100%;
+}

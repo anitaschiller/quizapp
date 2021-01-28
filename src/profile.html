@@ -1,20 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=NTR&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f0cc2c55e6.js" crossorigin="anonymous"></script>
     <title>Profile</title>
 </head>
+
 <body>
     <header class="header">
         <h1 class="header__headline">Quiz App</h1>
     </header>
     <main class="main">
         <h2 class="main__headline">Your Profile</h2>
+
+        <section class="profile">
+
+            <section class="profile__aboutme">
+                <img src="images/anita-schiller.jpg" alt="Portrait Anita Schiller">
+                <p>Hi, I'm Anita and currently a student with neuefische. I hope you have some fun with my quiz app.</p>
+            </section>
+
+            <section class="profile__skills">
+                <h3>Skills</h3>
+                <ul class="profile__skills__tags">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Git/Github</li>
+                </ul>
+            </section>
+
+            <section class="profile__button">
+                <button>Logout</button>
+            </section>
+        </section>
     </main>
     <footer class="footer">
         <nav class="footer__nav">
@@ -22,9 +45,12 @@
                 <li><a href="index.html"><i class="fas fa-home fa-2x"></i></a></li>
                 <li><a href="bookmark.html"><i class="fas fa-bookmark fa-2x"></i></a></li>
                 <li><a href="create.html"><i class="fas fa-plus-square fa-2x"></i></a></li>
-                <li><a href="profile.html"><i class="fas fa-user-alt fa-2x"></i></a></li>
+                <li>
+                    <a href="profile.html"><i class="fas fa-user-alt fa-2x active"></i></a>
+                </li>
             </ul>
         </nav>
     </footer>
 </body>
+
 </html>
