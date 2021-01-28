@@ -1,7 +1,7 @@
 button {
     font-size: 0.9rem;
     padding: 0.4rem;
-    border: solid 2px var(--secondary);
+    border: solid 3px var(--secondary);
     background: var(--third-c);
     font-weight: 600;
 }
@@ -16,4 +16,5 @@ button {
 
 button:hover {
     background-color: var(--fourth-c);
+    box-shadow: 0 0 2px 2px var(--secondary);
 }

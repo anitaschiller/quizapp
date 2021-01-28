@@ -12,6 +12,7 @@
 .profile__skills {
     margin: 2rem 0;
     background: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 .profile__skills__tags {
@@ -28,6 +29,7 @@
     padding: 0.3rem;
     font-size: 1rem;
     margin: 1rem;
+    width: 80px;
 }
 
 img {

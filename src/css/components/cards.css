@@ -2,10 +2,10 @@
     background: #fff1e6;
     padding: 0.5rem;
     grid-gap: 0.5rem;
-    border: solid 1px black;
-    margin: 1rem;
+    margin: 1.3rem;
     text-align: center;
     position: relative; 
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 .card__headline {
@@ -48,4 +48,5 @@
     padding: 0.3rem;
     font-size: 1rem;
     margin: 1rem;
+    width: 60px;
 }

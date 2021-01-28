@@ -3,11 +3,12 @@ form {
     background: var(--third-c);
     text-align: center;
     padding: 0 0.8rem;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 
 textarea {
-    font-size: .8rem;
+    font-size: 1rem;
     letter-spacing: 1px;
     border: 1px solid grey;
     font-family: 'NTR', sans-serif;
@@ -26,6 +27,7 @@ input {
 legend {
     color: var(--secondary);
     font-size: 1.7rem;
+    font-weight:700;
 }
 
 fieldset {
