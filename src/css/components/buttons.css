@@ -6,6 +6,11 @@ button {
     font-weight: 600;
 }
 
+button:hover {
+    background-color: var(--fourth-c);
+    box-shadow: 0 0 2px 2px var(--secondary);
+}
+
 .form__button {
     margin: 1rem;
 }
@@ -14,7 +19,3 @@ button {
     text-align: center;
 }
 
-button:hover {
-    background-color: var(--fourth-c);
-    box-shadow: 0 0 2px 2px var(--secondary);
-}

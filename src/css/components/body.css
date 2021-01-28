@@ -1,6 +1,0 @@
-xbody {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-rows: 1fr auto 1fr;
-    line-height: 1.5;
-}

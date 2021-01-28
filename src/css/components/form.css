@@ -6,7 +6,6 @@ form {
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
-
 textarea {
     font-size: 1rem;
     letter-spacing: 1px;
@@ -20,14 +19,10 @@ input {
     width: 100%;  
 }
 
-.label {
-    text-align: center;
-}
-
 legend {
     color: var(--secondary);
     font-size: 1.7rem;
-    font-weight:700;
+    font-weight: 700;
 }
 
 fieldset {
