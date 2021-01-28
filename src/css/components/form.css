@@ -1,0 +1,41 @@
+form {
+    margin: 1rem;
+    background: var(--third-c);
+    text-align: center;
+    padding: 0 0.8rem;
+}
+
+
+textarea {
+    font-size: .8rem;
+    letter-spacing: 1px;
+    border: 1px solid grey;
+    font-family: 'NTR', sans-serif;
+    width: 100%;
+}
+
+input {
+    border: 1px solid grey;
+    width: 100%;  
+}
+
+.label {
+    text-align: center;
+}
+
+legend {
+    color: var(--secondary);
+    font-size: 1.7rem;
+}
+
+.form__button {
+    font-size: 0.9rem;
+    padding: 0.4rem;
+    background-color: var(--fourth-c);
+    border: solid 2px var(--secondary);
+    margin: 1rem;
+}
+
+fieldset {
+    border: 1px solid var(--secondary);
+}
