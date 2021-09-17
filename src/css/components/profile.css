@@ -1,38 +1,54 @@
 img {
-    width: 50%;
-    border-radius: 100%;
+  width: 50%;
+  border-radius: 100%;
 }
 
 .profile {
-    margin: 1rem;
-    padding: 1rem;
-    text-align: center;
-    background: var(--third-c);
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  background: var(--third-c);
 }
 
 .profile__aboutme {
-    margin: 1rem;
+  margin: 1rem;
+}
+
+.profile__aboutme__quote {
+  position: relative;
+  text-align: left;
+  padding-left: 2rem;
+  font-style: italic;
+}
+
+.profile__aboutme__quote p:before {
+  content: open-quote;
+  font-size: 4rem;
+  color: gray;
+  position: absolute;
+  top: -2rem;
+  left: -0.6rem;
 }
 
 .profile__skills {
-    margin: 2rem 0;
-    background: white;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  margin: 2rem 0;
+  background: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 .profile__skills__tags {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 0; 
-    margin-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin-top: 0;
 }
 
 .profile__skills__tags li {
-    background: var(--secondary);
-    list-style: none;
-    padding: 0.3rem;
-    font-size: 1rem;
-    margin: 1rem;
-    width: 80px;
+  background: var(--secondary);
+  list-style: none;
+  padding: 0.3rem;
+  font-size: 1rem;
+  margin: 1rem;
+  width: 80px;
 }
