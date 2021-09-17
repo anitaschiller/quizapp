@@ -1,26 +1,34 @@
 .footer {
-    background: var(--primary);
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
+  background: var(--primary);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .footer__nav__list {
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
+  display: flex;
+  padding: 0;
 }
 
 .footer__nav__list li {
-    list-style: none;
+  list-style: none;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .fas {
-    color: var(--fourth-c);
-    padding-bottom: 0.3rem;
+  color: var(--fourth-c);
+  padding-bottom: 0.3rem;
+  transition: color 1s ease-in;
+}
+
+.fas:active {
+  color: var(--secondary);
 }
 
 .fas.active {
-    border-bottom: double var(--fourth-c) 10px;
+  border-bottom: double var(--fourth-c) 10px;
 }
