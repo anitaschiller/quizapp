@@ -1,112 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=NTR&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f0cc2c55e6.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>My Quiz App</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=NTR&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/f0cc2c55e6.js" crossorigin="anonymous"></script>
-    <script src="app.js" defer></script>
-    <title> My Quiz App</title>
-</head>
-
-<body>
+  <body>
     <header class="header">
-        <h1 class="header__headline">Quiz App</h1>
+      <h1 class="header__headline">Quiz App</h1>
     </header>
 
     <main class="main">
+      <!--  Home -->
+      <section class="page" id="home">
         <h2 class="main__headline">Let's Quiz!</h2>
+        <div class="card__container"></div>
+      </section>
+
+      <!-- Bookmarks -->
+      <section class="page" id="bookmarks">
+        <h2 class="main__headline">Your Bookmarks</h2>
         <section class="card">
-            <h2 class="card__headline">Question 1</h2>
-            <i class="card__bookmark far fa-bookmark"></i>
-            <p class="card__question">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit illo quaerat
-                consequuntur eos expedita quae ipsam necessitatibus pariatur nulla molestias.</p>
-            <button class="card__button button1">Show Answer</button>
-            <p class="card__answer answer1 hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, enim?
-            </p>
-            <ul class="card__tags">
-                <li class="right-answer">Tag 1</li>
-                <li>Tag 2</li>
-                <li>Tag 3</li>
-                <li>Tag 4</li>
-            </ul>
+          <h2 class="card__headline">Question 1</h2>
+          <i class="card__bookmark fas fa-bookmark"></i>
+          <p class="card__question">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit illo
+            quaerat consequuntur eos expedita quae ipsam necessitatibus pariatur
+            nulla molestias.
+          </p>
+          <button class="card__button">Show Answer</button>
+          <ul class="card__tags">
+            <li>Tag 1</li>
+            <li>Tag 2</li>
+            <li>Tag 3</li>
+            <li>Tag 4</li>
+          </ul>
         </section>
         <section class="card">
-            <h2 class="card__headline"> Question 2</h2>
-            <i class="card__bookmark far fa-bookmark"></i>
-            <p class="card__question">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit illo quaerat
-                consequuntur eos expedita quae ipsam necessitatibus pariatur nulla molestias.</p>
-            <button class="card__button button2">Show Answer</button>
-            <p class="card__answer answer2 hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
-                dolor?</p>
-            <ul class="card__tags">
-                <li>Tag 1</li>
-                <li>Tag 2</li>
-                <li class="right-answer">Tag 3</li>
-                <li>Tag 4</li>
-            </ul>
+          <h2 class="card__headline">Question 2</h2>
+          <i class="card__bookmark fas fa-bookmark"></i>
+          <p class="card__question">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit illo
+            quaerat consequuntur eos expedita quae ipsam necessitatibus pariatur
+            nulla molestias.
+          </p>
+          <button class="card__button">Show Answer</button>
+          <ul class="card__tags">
+            <li>Tag 1</li>
+            <li>Tag 2</li>
+            <li>Tag 3</li>
+            <li>Tag 4</li>
+          </ul>
         </section>
         <section class="card">
-            <h2 class="card__headline">Question 3</h2>
-            <i class="card__bookmark far fa-bookmark"></i>
-            <p class="card__question">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit illo quaerat
-                consequuntur eos expedita quae ipsam necessitatibus pariatur nulla molestias.</p>
-            <button class="card__button button3">Show Answer</button>
-            <p class="card__answer answer3 hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
-                delectus.</p>
-            <ul class="card__tags">
-                <li>Tag 1</li>
-                <li class="right-answer">Tag 2</li>
-                <li>Tag 3</li>
-                <li>Tag 4</li>
-            </ul>
+          <h2 class="card__headline">Question 3</h2>
+          <i class="card__bookmark fas fa-bookmark"></i>
+          <p class="card__question">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit illo
+            quaerat consequuntur eos expedita quae ipsam necessitatibus pariatur
+            nulla molestias.
+          </p>
+          <button class="card__button">Show Answer</button>
+          <ul class="card__tags">
+            <li>Tag 1</li>
+            <li>Tag 2</li>
+            <li>Tag 3</li>
+            <li>Tag 4</li>
+          </ul>
         </section>
-        <section class="card">
-            <h2 class="card__headline">Question 4</h2>
-            <i class="card__bookmark far fa-bookmark"></i>
-            <p class="card__question">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit illo quaerat
-                consequuntur eos expedita quae ipsam necessitatibus pariatur nulla molestias.</p>
-            <button class="card__button button4">Show Answer</button>
-            <p class="card__answer answer4 hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, omnis.
-            </p>
-            <ul class="card__tags">
-                <li class="right-answer">Tag 1</li>
-                <li>Tag 2</li>
-                <li>Tag 3</li>
-                <li>Tag 4</li>
+      </section>
+
+      <!-- Create -->
+      <section class="page" id="create">
+        <h2 class="main__headline">Create Questions</h2>
+        <form class="form">
+          <label for="question">Question</label>
+          <textarea id="question" name="question">
+Please enter your Question</textarea
+          >
+          <label for="answer">Answer</label>
+          <textarea id="answer" name="answer">Please enter the Answer</textarea>
+          <label>Tags</label>
+          <input type="text" name="tags" />
+          <button type="submit" class="form__button">Submit</button>
+        </form>
+      </section>
+
+      <!-- Profile -->
+      <section class="page" id="profile">
+        <h2 class="main__headline">Your Profile</h2>
+        <section class="profile">
+          <section class="profile__aboutme">
+            <img
+              src="images/anita-schiller.jpg"
+              alt="Portrait Anita Schiller"
+            />
+            <blockquote class="profile__aboutme__quote">
+              <p>
+                Hi, I'm Anita and currently a student with neuefische. I hope
+                you have fun with my quiz app. Lorem ipsum dolor sit amet,
+                consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                invidunt ut labore et dolore magna aliquyam erat, sed diam
+                voluptua. At vero eos et accusam et justo duo dolores et ea
+                rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                invidunt ut labore et dolore magna aliquyam erat, sed diam
+                voluptua. At vero eos et accusam et justo duo dolores et ea
+                rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+                Lorem ipsum dolor sit amet.
+              </p>
+            </blockquote>
+          </section>
+          <section class="profile__skills">
+            <h3>Skills</h3>
+            <ul class="profile__skills__tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Git/Github</li>
+              <li>Quizzing</li>
             </ul>
+          </section>
+          <section class="profile__button">
+            <button>Logout</button>
+          </section>
         </section>
-        <section class="card">
-            <h2 class="card__headline">Question 5</h2>
-            <i class="card__bookmark far fa-bookmark"></i>
-            <p class="card__question">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit illo quaerat
-                consequuntur eos expedita quae ipsam necessitatibus pariatur nulla molestias.</p>
-            <button class="card__button button5">Show Answer</button>
-            <p class="card__answer answer5 hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
-                fugiat.</p>
-            <ul class="card__tags">
-                <li>Tag 1</li>
-                <li>Tag 2</li>
-                <li>Tag 3</li>
-                <li class="right-answer">Tag 4</li>
-            </ul>
-        </section>
+      </section>
     </main>
 
     <footer class="footer">
-        <nav class="footer__nav">
-            <ul class="footer__nav__list">
-                <li><a href="index.html"><i class="fas fa-home fa-2x active"></i></a></li>
-                <li><a href="bookmark.html"><i class="fas fa-bookmark fa-2x"></i></a></li>
-                <li><a href="create.html"><i class="fas fa-plus-square fa-2x"></i></a></li>
-                <li><a href="profile.html"><i class="fas fa-user-alt fa-2x"></i></a></li>
-            </ul>
-        </nav>
+      <nav class="footer__nav">
+        <ul class="footer__nav__list">
+          <li>
+            <a href="#home"><i class="fas fa-home fa-2x active"></i></a>
+          </li>
+          <li>
+            <a href="#bookmarks"><i class="fas fa-bookmark fa-2x"></i></a>
+          </li>
+          <li>
+            <a href="#create"><i class="fas fa-plus-square fa-2x"></i></a>
+          </li>
+          <li>
+            <a href="#profile"><i class="fas fa-user-alt fa-2x"></i></a>
+          </li>
+        </ul>
+      </nav>
     </footer>
-
-</body>
-
+    <script src="app.js" type="module" defer></script>
+  </body>
 </html>
