@@ -1,52 +1,54 @@
 .card {
-    background: #fff1e6;
-    padding: 0.5rem;
-    grid-gap: 0.5rem;
-    margin: 1.3rem;
-    text-align: center;
-    position: relative; 
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  background: #fff1e6;
+  padding: 0.5rem;
+  grid-gap: 0.5rem;
+  margin: 1.3rem;
+  text-align: center;
+  position: relative;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 .card__headline {
-    color: var(--secondary);
-    font-size: 1.7rem;
-    padding: 0.5rem;
+  color: var(--secondary);
+  font-size: 1.7rem;
+  padding: 0.5rem;
 }
 
 .card__bookmark {
-    font-size: 2.5rem;
-    position: absolute;
-    right: 10px;
-    top: -10px;
+  font-size: 2.5rem;
+  position: absolute;
+  right: 10px;
+  top: -10px;
 }
 
-.card__bookmark.fas, .card__bookmark.far {
-    color: var(--secondary);
-    background-color: var(--third-c);
+.card__bookmark.fas,
+.card__bookmark.far {
+  color: var(--secondary);
+  background-color: var(--third-c);
 }
 
-.card__bookmark.fas:hover, .card__bookmark.far:hover {
-    transform: scale(1.1);
+.card__bookmark.fas:hover,
+.card__bookmark.far:hover {
+  transform: scale(1.1);
 }
 
-.card__question, .card__answer {
-    font-size: 1.1rem;
-    padding: 1rem 0;
+.card__paragraph {
+  font-size: 1.1rem;
+  padding: 1rem 0;
 }
 
 .card__tags {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 0; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
 }
 
 .card__tags li {
-    background: var(--secondary);
-    list-style: none;
-    padding: 0.3rem;
-    font-size: 1rem;
-    margin: 1rem;
-    width: 60px;
+  background: var(--secondary);
+  list-style: none;
+  padding: 0.3rem;
+  font-size: 1rem;
+  margin: 1rem;
+  width: 60px;
 }

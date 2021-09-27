@@ -1,29 +1,29 @@
 function toggleAnswer(button) {
-    button.addEventListener('click', () => {
-        const answer = button.parentNode.querySelector('.card__answer');
-        answer.classList.toggle('hidden');
+  button.addEventListener('click', () => {
+    const answer = button.parentNode.querySelector('.answer');
+    answer.classList.toggle('hidden');
 
-        changeButtonText(button, answer)
-
-        visualizeRightAnswer(button)
-    })
+    changeButtonText(button, answer);
+  });
 }
 
-function toggleBookmark(bookmark) {
-    bookmark.addEventListener('click', () => {
-        bookmark.classList.toggle('far')
-        bookmark.classList.toggle('fas')
-    })
+function toggleBookmark(bookmark, array) {
+  bookmark.addEventListener('click', () => {
+    const index = bookmark.dataset.index;
+    array[index].isBookmarked = !array[index].isBookmarked;
+    bookmark.classList.toggle('fas');
+  });
 }
 
 function changeButtonText(button, answer) {
-    button.innerText = answer.classList.contains('hidden') ? 'Show Answer' : 'Hide Answer';
+  button.innerText = answer.classList.contains('hidden')
+    ? 'Show Answer'
+    : 'Hide Answer';
 }
 
 function visualizeRightAnswer(button) {
-    const rightAnswer = button.parentNode.querySelector('.right-answer')
-    rightAnswer.classList.toggle('bigger');
+  const rightAnswer = button.parentNode.querySelector('.right-answer');
+  rightAnswer.classList.toggle('bigger');
 }
-
 
 export { toggleAnswer, toggleBookmark, changeButtonText, visualizeRightAnswer };
