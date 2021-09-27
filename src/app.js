@@ -1,4 +1,60 @@
-import { toggleAnswer, toggleBookmark } from './toggle.js';
+// Local Storage
+
+const getQuestions = () => {
+  let questions;
+
+  if (localStorage.getItem('questions')) {
+    questions = JSON.parse(localStorage.getItem('questions'));
+  } else {
+    questions = [
+      {
+        question: 'Question 1',
+        answer: 'Answer 1',
+        tags: 'tag1, tag2, tag3, tag4',
+        isBookmarked: false,
+      },
+      {
+        question: 'Question 2',
+        answer: 'Answer 2',
+        tags: 'tag1, tag2, tag3, tag4, tag5, tag6',
+        isBookmarked: true,
+      },
+    ]; // <-- initial value goes here
+    localStorage.setItem('questions', JSON.stringify(questions));
+  }
+
+  return questions;
+};
+
+const setQuestions = (newQuestions) => {
+  localStorage.setItem('questions', JSON.stringify(newQuestions));
+};
+
+// Weitere Funktionen
+
+function toggleAnswer(button) {
+  button.addEventListener('click', () => {
+    const answer = button.parentNode.querySelector('.answer');
+    answer.classList.toggle('hidden');
+
+    changeButtonText(button, answer);
+  });
+}
+
+function toggleBookmark(bookmark, array) {
+  bookmark.addEventListener('click', () => {
+    const index = bookmark.dataset.index;
+    array[index].isBookmarked = !array[index].isBookmarked;
+    bookmark.classList.toggle('fas');
+    setQuestions(array);
+  });
+}
+
+function changeButtonText(button, answer) {
+  button.innerText = answer.classList.contains('hidden')
+    ? 'Show Answer'
+    : 'Hide Answer';
+}
 
 // Navigation Single Page App
 const navigationItems = document.querySelectorAll('a');
@@ -17,20 +73,7 @@ navigationItems.forEach((navigationItem) => {
 
 // Save form input in global variable
 
-let questions = [
-  {
-    question: 'Question 1',
-    answer: 'Answer 1',
-    tags: 'tag1, tag2, tag3, tag4',
-    isBookmarked: false,
-  },
-  {
-    question: 'Question 2',
-    answer: 'Answer 2',
-    tags: 'tag1, tag2, tag3, tag4, tag5, tag6',
-    isBookmarked: true,
-  },
-];
+let questions = getQuestions();
 
 const form = document.querySelector('form');
 form.addEventListener('submit', (event) => {
@@ -43,6 +86,7 @@ form.addEventListener('submit', (event) => {
   questions.push(newQuestion);
   renderQuestions();
   form.reset();
+  setQuestions(questions);
   event.preventDefault();
 });
 
@@ -104,3 +148,5 @@ const renderQuestions = () => {
 };
 
 renderQuestions();
+
+export { setQuestions };
