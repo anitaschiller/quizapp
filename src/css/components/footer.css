@@ -1,26 +1,26 @@
 .footer {
-    background: var(--primary);
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
+  background: var(--primary);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
-.footer__nav__list {
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
+.footer__list {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
 }
 
-.footer__nav__list li {
-    list-style: none;
+.footer__list li {
+  list-style: none;
 }
 
 .fas {
-    color: var(--fourth-c);
-    padding-bottom: 0.3rem;
+  color: var(--fourth-c);
+  padding-bottom: 0.3rem;
 }
 
 .fas.active {
-    border-bottom: double var(--fourth-c) 10px;
+  border-bottom: double var(--fourth-c) 10px;
 }

@@ -1,14 +1,14 @@
 :root {
-    --primary: #2a9d8f;
-    --secondary: #e76f51;
-    --third-c: #fff1e6;
-    --fourth-c: #ffcc4d;
+  --primary: #2a9d8f;
+  --secondary: #e76f51;
+  --third-c: #fff1e6;
+  --fourth-c: #ffcc4d;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body,
@@ -16,16 +16,16 @@ h1,
 h2,
 h3,
 p {
-    margin: 0;
+  margin: 0;
 }
 
 body {
-    line-height: 1.5;
-    font-size: 1.25rem;
-    font-family: 'NTR', sans-serif;
+  line-height: 1.5;
+  font-size: 1.25rem;
+  font-family: 'NTR', sans-serif;
 }
 
 main {
-    margin-top: 110px;
-    margin-bottom: 110px;
+  margin-top: 110px;
+  margin-bottom: 110px;
 }
