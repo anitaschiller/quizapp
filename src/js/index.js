@@ -18,6 +18,9 @@ buttons.forEach((button) => {
   button.addEventListener('click', () => {
     const answer = button.parentNode.querySelector('.card__answer');
     answer.classList.toggle('hidden');
+    button.innerText = answer.classList.contains('hidden')
+      ? 'Show Answer'
+      : 'Hide Answer';
   });
 });
 
